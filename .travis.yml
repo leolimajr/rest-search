@@ -6,10 +6,10 @@ jdk: oraclejdk8
 services:
   - docker
 
-after_success
+after_success:
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD" registry.heroku.com
 docker build -t registry.heroku.com/rest-search/web .
 
-deploy
+deploy:
 docker push registry.heroku.com/rest-search/web
 
