@@ -1,0 +1,7 @@
+.DS_Store
+.mvn
+.classpath
+.project
+.settings
+target
+com.leolimajr.sample.model.Person
