@@ -49,6 +49,16 @@ mvn verify
 ----
 mvn -DskipTests=true package
 ----
+### Build docker image ###
+[indent=0]
+----
+docker build -t rest-search:0.1.0 .
+----
+### Run docker continer ###
+[indent=0]
+----
+docker run -d -p 8080:8080 rest-search:0.1.0
+----
 == License
 This is an Open Source software released under the
 http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
