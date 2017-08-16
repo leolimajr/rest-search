@@ -52,7 +52,6 @@ public class PersonController {
 
 	@GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
 	HttpEntity<PersonResource> get(@PathVariable Long id) {
-		System.out.println(personService.findOne(id));
 		return ResponseEntity.ok().body(personService.findOne(id));
 	}
 
