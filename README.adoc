@@ -1,6 +1,6 @@
 = rest-search image:https://travis-ci.org/leolimajr/rest-search.svg?branch=master["Build Status", link="https://travis-ci.org/leolimajr/rest-search/builds"]
 
-This is a full text search rest api experiment which loads CSV file into H2 database, expose data via hypermidia-driven rest API.
+This is a full text search experiment which loads a CSV file into H2 database and exposes data via hypermidia-driven rest API.
 
 [[used-technologies]]
 == Main Used Technologies
