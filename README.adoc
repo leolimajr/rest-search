@@ -1,0 +1,54 @@
+= rest-search image:https://travis-ci.org/leolimajr/rest-search.svg?branch=master["Build Status", link="https://travis-ci.org/leolimajr/rest-search/builds"]
+
+This is a full text search rest api experiment which loads CSV file into H2 database, expose data via hypermidia-driven rest API.
+
+[[used-technologies]]
+== Main Used Technologies
+
+* Spring Boot
+* Spring Batch
+* Spring Rest + HATEAOS (Hypermedia-Driven Rest Service)
+* Spring Rest Hal Browser (Easy navigation of Hypermedia API via Brownser)
+* Spring Actuator (Rest/JMX Monitoring featuring JVM data, Thread Dump, Metrics, Health Check, Metrics etc)
+* Spring Data JPA + Hibernate
+* Hibernate Search (Fulltext search capabilities on top of JPA)
+* H2 (In Memory Database)
+* Spring Test
+
+[[getting-started]]
+== Getting Started
+
+### System Requirements ###
+
+You need to install the following prior to run this app.
+
+* Oracle JDK 8
+* Maven 3.2+
+
+
+### Running ###
+[indent=0]
+----
+mvn spring-boot:run
+----
+* Open http://localhost:8080 in a web browser to access the app
+
+TIP: You can customize these ports by running:
+[indent=0]
+----
+mvn spring-boot:run -Dserver.port=8090
+----
+
+### Running tests ###
+[indent=0]
+----
+mvn verify
+----
+### Build artifact ###
+[indent=0]
+----
+mvn -DskipTests=true package
+----
+== License
+This is an Open Source software released under the
+http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
